@@ -14,10 +14,76 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
     <link rel="stylesheet" href="/assets/fonts/fontawesome5-overrides.min.css">
     <link rel="stylesheet" href="/assets/css/styles.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
+      <style>
+          .middle{
+               top: 50%;
+  width: 100%;
+}
+.num{
+  font-size: 2.6rem;
+  color: white;
+}
+
+.counting-sec{
+ 
+  width: 100%;
+}
+
+.inner-width{
+  max-width:1200px;
+  margin:auto;
+  display:flex;
+}
+.bt{
+    align-items: center;
+}
+.banner{
+  -webkit-font-smoothing: antialiased;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.banner .jumbotron{
+    background-color: #ffffff;
+}
+
+.banner h3 span {
+  position: relative;
+  top: 10px;
+  display: inline-block;
+  animation: bounce .3s ease infinite alternate;
+  font-family: 'Fira Code', monospace;
+  font-size: 30px;
+  color: black;
+}
+.btn-primary{
+    background-color: black;
+    border: 2px solid black;
+}
+
+.banner h1 span:nth-child(2) { animation-delay: .1s; }
+.banner h1 span:nth-child(3) { animation-delay: .2s; }
+.banner h1 span:nth-child(4) { animation-delay: .3s; }
+.banner h1 span:nth-child(5) { animation-delay: .4s; }
+.banner h1 span:nth-child(6) { animation-delay: .5s; }
+.banner h1 span:nth-child(7) { animation-delay: .6s; }
+.banner h1 span:nth-child(8) { animation-delay: .7s; }
+
+@keyframes bounce {
+  100% {
+    top: -10px;
+
+  }
+}
+
+      </style>
 </head>
 
 <body style="color: rgb(255,255,255);background-color: rgb(16,16,16);font-size: 12px;font-family: 'Fira Code', monospace;">
-    <!-- Start: Header -->
+    <!-- Start: Header rey aa nav avvakpothe lite okk -->
     <div style="height: 800px;">
         <!-- Start: Header -->
         <div class="header-blue" style="font-family: 'Fira Code', monospace;background-position: left;background-size: cover;background-repeat: no-repeat;font-size: 15 px;filter: blur(0px) brightness(86%) contrast(116%) invert(0%);background-color: rgba(24,78,142,0);background-image: url(&quot;/assets/img/computer-keyboard.jpg&quot;);height: 750px;">
@@ -40,17 +106,34 @@
                 <div class="col-12 col-lg-6 col-xl-9 offset-xl-5" style="margin-left: 0px;">
                     <h2 style="font-size: 60px;">Welcome to the<br>League Of Coders.</h2>
                     <p class="shadow-none" style="background-color: rgba(255,255,255,0);color: #ffffff;filter: brightness(190%) contrast(200%) grayscale(83%) hue-rotate(0deg) saturate(200%);"><br></p>
-                    <p class="text-left shadow-none" style="background-color: rgba(255,255,255,0);color: #ffffff;filter: brightness(190%) contrast(200%) grayscale(83%) hue-rotate(0deg) saturate(200%);width: 300px;">A community of students for the upliftment of the coding culture.</p><button class="btn btn-light btn-lg action-button" type="button">Know More</button></div>
-                <!-- End: Text -->
+                    <p class="text-left shadow-none" style="background-color: rgba(255,255,255,0);color: #ffffff;filter: brightness(190%) contrast(200%) grayscale(83%) hue-rotate(0deg) saturate(200%);width: 300px;">A community of students for the upliftment of the coding culture.</p>
+                    <a href="#about"><button class="btn btn-light btn-lg action-button" type="button">Know More</button></a></div>
+                <!-- End: Text -- edit here use bootstrap check that width poindi malla haa chustha-->
             </div>
         </div>
     </div>
     <!-- End: Header -->
     </div>
     <!-- End: Header -->
+
+    
+    <div class="banner">
+        <div class="col-xs-8">
+        <div class="jumbotron">
+        <h3>
+          <span>To</span>
+          <span>  Register</span>
+          <span>  For</span>
+          <span>  Hackathon</span>
+          <a href="#"><button type="button" name="button" class="btn btn-primary">click here</button></a>
+        </h3>
+    </div>
+</div>
+</div>
+
     <!-- Start: About -->
     <div id="about" class="highlight-blue" style="background-color: rgba(226,226,226,0);">
-        <!-- Start: Intro -->
+        <!-- Start: Intro -- rey mobile lo padding kavali chussko okk-->
         <div class="intro">
             <h2 class="text-center">About Us</h2>
             <div class="row no-gutters row-cols-1 justify-content-center align-items-center">
@@ -68,7 +151,7 @@
         <!-- End: Intro -->
         <div class="container">
             <!-- Start: Buttons -->
-            <div class="buttons"><a class="btn btn-primary" role="button" href="#">Primary</a></div>
+           <!--<div class="buttons"><a class="btn btn-primary" role="button" href="#">Primary</a></div>--> 
             <!-- End: Buttons -->
         </div>
     </div>
@@ -96,6 +179,36 @@
             <!-- End: Features -->
         </div>
     </div>
+    
+    <div class=intro>
+        <h2 class="text-center" style="color: rgb(248,248,248);"><strong>Stats</strong></h2>
+
+    </div>
+    <div class="container">
+    <div class="middle">
+        <div class="counting-sec">
+          <div class="inner-width">
+            <div class="col-sm-3 col-lg-3 col-xs-3">
+              <div class="num">67</div>
+              Club Members
+            </div>
+            <div class="col-sm-3 col-lg-3 col-xs-3">
+              <div class="num">100</div>
+              Participation
+            </div>
+            <div class="col-sm-3 col-lg-3 col-xs-3">
+              <div class="num">67</div>
+              Hosted Contests
+            </div>
+            <div class="col-sm-3 col-lg-3 col-xs-3">
+              <div class="num">673</div>
+              Sessions Taken
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- End: Partners -->
     <!-- Start: Team -->
     <div class="text-center team-boxed" id="team" style="background-color: rgb(16,16,16);">
@@ -134,6 +247,41 @@
             <!-- End: People -->
         </div>
     </div>
+
+  
+
+    <div class="text-center team-boxed" id="team-more" style="background-color: rgb(16,16,16);">
+       <div class="container">
+        <div class="buttons"><a class="btn btn-primary" role="button"  href="#demo" button onclick="myFunction()" data-toggle="collapse" id="bt">See more</a></div>
+		 <div id="demo" class="collapse">
+            <div class="row justify-content-center align-items-center people">
+                <div class="col-md-6 col-lg-4 item">
+                    <div class="border rounded shadow-sm box" style="background-color: rgb(42,42,42);background-image: url(&quot;/assets/img/view-of-airport-247791.jpg&quot;);filter: blur(0px) brightness(100%) grayscale(10%);"><img class="rounded-circle" src="/assets/img/3.jpg">
+                        <h3 class="name" style="color: rgb(255,255,255);">JayaKrishna</h3>
+                        <p class="title">PRESIDENT</p>
+                        <p class="description" style="color: rgb(255,255,255);filter: brightness(200%) contrast(200%);opacity: 1;">Shy with people, harsh with code; he is the perfect lead for our team. His achievements will surely amaze you.</p>
+                        <div class="social"><a href="https://www.stopstalk.com/user/profile/jayakrishna_g" target="_blank"><i class="fas fa-laptop-code"></i></a><a href="https://www.linkedin.com/in/jayakrishna-g/" target="_blank"><i class="fa fa-linkedin-square"></i></a>
+                            <a
+                                href="https://wa.me/917993462216" target="_blank"><i class="fa fa-whatsapp"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 item">
+                    <div class="border rounded shadow-sm box" style="background-color: rgb(42,42,42);background-image: url(&quot;/assets/img/view-of-airport-247791.jpg&quot;);filter: blur(0px) brightness(100%) grayscale(10%);"><img class="rounded-circle" src="/assets/img/3.jpg">
+                        <h3 class="name" style="color: rgb(255,255,255);">Manish</h3>
+                        <p class="title">VICE-PRESIDENT</p>
+                        <p class="text-center description" style="color: rgb(255,255,255);filter: brightness(200%) contrast(200%);opacity: 1;">From getting partnerships to oranising competitions to designing our content, he is the goto person for one and all.</p>
+                        <div class="social"><a href="https://www.stopstalk.com/user/profile/18H51A0575" target="_blank"><i class="fas fa-laptop-code"></i></a><a href="https://www.linkedin.com/in/manish-reddy-nandineni-1147a317b/" target="_blank"><i class="fa fa-linkedin-square"></i></a>
+                            <a
+                                href="https://wa.me/917075698828" target="_blank"><i class="fa fa-whatsapp"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+     
     <!-- End: Team -->
     <!-- Start: Location -->
     <div class="map-clean" style="background-color: rgb(16,16,16);">
@@ -174,6 +322,20 @@
         </footer>
     </div>
     <!-- End: Footer -->
+    <script type="text/javascript">
+        $(".num").counterUp({delay:10,time:1000});
+      </script>
+    <script type="text/javascript">
+        function myFunction() {
+      var x = document.getElementById("bt");
+      if (x.innerHTML =="See Less") {
+        x.innerHTML = "See More";
+      }
+      else {
+        x.innerHTML = "See Less";
+      }
+    }
+</script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
 </body>
